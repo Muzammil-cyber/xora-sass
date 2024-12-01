@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import PropTypes from "prop-types";
 
 const TestimonialItem = ({ item, containerClassName }) => {
   return (
@@ -26,11 +25,6 @@ const TestimonialItem = ({ item, containerClassName }) => {
       </div>
     </div>
   );
-};
-
-TestimonialItem.propTypes = {
-  item: PropTypes.object.isRequired,
-  containerClassName: PropTypes.string,
 };
 
 export default TestimonialItem;

@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useState } from "react";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
-import PropTypes from "prop-types";
 
 const FaqItem = ({ item, index }) => {
   const [activeId, setActiveId] = useState(null);
@@ -59,15 +58,6 @@ const FaqItem = ({ item, index }) => {
       </div>
     </div>
   );
-};
-
-FaqItem.propTypes = {
-  item: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired,
-  }).isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 export default FaqItem;
